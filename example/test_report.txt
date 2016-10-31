@@ -1,0 +1,195 @@
+MPDS 1.0 / 20160629
+VERSION: SERIAL
+================================================================================
+simInput:
+   consoleAppFlag: 1
+
+   simImage:
+      grid:
+         Size   :     200            200              1
+         Spacing:       1.000000       1.000000       1.000000
+         Origin :       0.000000       0.000000       0.000000
+         Number of nodes in a xy-section:    40000
+         Total number of nodes          :    40000
+      nvar:         1
+      nxyzv:    40000
+      varName:
+         facies
+
+   outputVarFlag:
+      outputVarFlag for variable   0: 1
+
+   formatStringVar:
+      format string for variable   0: %.10g
+
+   outputSimJob: OUTPUT_SIM_ONE_FILE_PER_REALIZATION
+      outputSimImageFileName: test
+
+   outputReportFlag: 1
+   outputReportFileName: test_report.txt
+
+   ntrainImage:   1
+
+   simGridAsTiFlag   0: 0
+
+   trainImage   0:
+      grid:
+         Size   :     250            250              1
+         Spacing:       1.000000       1.000000       1.000000
+         Origin :       0.000000       0.000000       0.000000
+         Number of nodes in a xy-section:    62500
+         Total number of nodes          :    62500
+      nvar:         1
+      nxyzv:    62500
+      varName:
+         facies
+
+   ndataPointSet:   0
+
+   maskImageFlag: 0
+
+   homothetyUsage: 0
+
+   rotationUsage: 0
+
+   trainValueRangeExtensionMax:       0.050000
+
+   normalizingType: NORMALIZING_LINEAR
+
+   searchNeighborhoodParameters:
+   searchNeighborhoodParameters for variable   0:
+      Search radiuses (in number of nodes)    :      -1.000000      -1.000000       0.000000
+      Anisotropy ratios                       :       1.000000       1.000000       1.000000
+      Angles (azimuth, dip, plunge) in degrees:      
+ 0.000000       0.000000       0.000000
+
+   nneighboringNode:
+      nneighboringNode for variable   0:   20
+
+   neighboringNodeDensity:
+      neighboringNodeDensity for variable   0: 1.00000000E+00
+
+   relativeDistanceFlag:
+      relativeDistanceFlag for variable   0: 0
+
+   distanceType:
+      distanceType for variable   0:  0
+
+   powerLpDistance:
+      powerLpDistance for variable   0   :   0.000000
+
+   powerLpDistanceInv:
+      powerLpDistanceInv for variable   0:   0.000000
+
+   conditioningWeightFactor
+      conditioningWeightFactor for variable   0: 1.0000
+
+   simAndPathParameters:
+      Simulation type: SIM_ONE_BY_ONE
+      Path type: PATH_RANDOM
+
+   distanceThreshold:
+      distanceThreshold for variable   0:       0.010000
+
+   softProbability:
+   softProbability for variable   0
+      probabilityConstraintUsage: 0 (none)
+
+   blockData:
+   blockData for variable   0
+      blockDataUsage: 0 (none)
+
+   maxScanFraction:
+      maxScanFraction for training image   0:       0.300000
+
+   tolerance:       0.000000
+
+   npostProcessingPathMax:   1
+
+   postProcessingNneighboringNode:
+      postProcessingNneighboringNode for variable   0:    6
+   postProcessingNeighboringNodeDensity:
+      postProcessingNeighboringNodeDensity for variable   0: 1.00000000E+00
+   postProcessingDistanceThreshold:
+      postProcessingDistanceThreshold for variable   0:       0.020000
+   postProcessingMaxScanFraction:
+      postProcessingMaxScanFraction for training image   0:       0.200000
+
+   postProcessingTolerance:       0.000000
+
+   seed         :        444
+   seedIncrement:          1
+
+   nrealization: 1
+================================================================================
+Number of different search neighborhood(s):   1
+Search neighborhood   0
+   size :      48301
+   ixMin:       -124
+   iyMin:       -124
+   izMin:          0
+   ixMax:        124
+   iyMax:        124
+   izMax:          0
+
+Search neighborhood for variable   0:   0
+
+searchNeighborhoodWeightUnifFlag for variable   0:   1
+
+Number of conditioning data for variable 0:        0
+Number of nodes in SG with all variables informed (conditioning):        0
+Number of nodes in SG that will not be simulated (use of mask)  :        0
+Simulation path:
+   type: SIM_ONE_BY_ONE
+                        SIM_ONE_BY_ONE / SIM_VARIABLE_VECTOR
+   total length       :          40000            40000
+   not to be simulated:              0                0
+   to be simulated    :          40000            40000
+================================================================================
+Realization     1 of     1:
+--------------------------------------------------------------------------------
+Statistics on nodes simulated using training image   0:
+#sim. nodes                                 :     40000
+incl.: #nodes from marginal                 :         0
+#sim. nodes above threshold                 :      2379              (    5.9475% of sim. nodes)
+                                                                     (    5.9475% of sim. nodes excluding nodes from marginal)
+with error (relative excess from threshold):
+error Min                                   :         4.00000000E+00 (  400.0000%)
+error Max                                   :         2.40000000E+01 ( 2400.0000%)
+error Mean                                  :         4.95031424E+00 (  495.0314%)
+#scan it. Min                               :         1              (    0.0016% of TI)
+#scan it. Max                               :     18750              (   30.0000% of TI)
+#scan it. Mean                              :         1.69715393E+03 (    2.7154% of TI)
+--------------------------------------------------------------------------------
+Statistics on all simulated nodes:
+#sim. nodes (tot.)            :     40000
+incl.:#nodes (tot.) from marg.:         0              (    0.0000% of sim. nodes (tot.))
+#sim. nodes (tot.) ab. thresh.:      2379              (    5.9475% of sim. nodes (tot.))
+#flagged nodes (for resimul.) :      8286
+CPU time (sec):       3.14
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Post-processing path   1 of   1:
+--------------------------------------------------------------------------------
+Statistics on nodes simulated using training image   0:
+#sim. nodes                                 :      8286
+#sim. nodes above threshold                 :        45              (    0.5431% of sim. nodes)
+with error (relative excess from threshold):
+error Min                                   :         7.33333333E+00 (  733.3333%)
+error Max                                   :         7.33333333E+00 (  733.3333%)
+error Mean                                  :         7.33333333E+00 (  733.3333%)
+#scan it. Min                               :         1              (    0.0016% of TI)
+#scan it. Max                               :     12500              (   20.0000% of TI)
+#scan it. Mean                              :         1.50299059E+02 (    0.2405% of TI)
+--------------------------------------------------------------------------------
+Statistics on all simulated nodes:
+#sim. nodes (tot.)            :     40000
+#sim. nodes (tot.) ab. thresh.:        45              (    0.1125% of sim. nodes (tot.))
+#flagged nodes (for resimul.) :       253
+CPU time (sec):       0.06
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#post-processing path(s) done:   1
+********************************************************************************
+CPU time (sec) for realization     1 of     1:       3.21
+********************************************************************************
+CPU time (sec) for all realizations          :       3.21
+================================================================================
