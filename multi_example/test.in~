@@ -13,8 +13,9 @@
       varName2  0
       varName3  1  DEFAULT_FORMAT
 */
-1
+2
 veg      1  DEFAULT_FORMAT
+ortho	 1  DEFAULT_FORMAT
 
 /* OUTPUT SETTINGS FOR SIMULATION */
 /* Key word and required name(s) or prefix, for output of the realizations:
@@ -30,7 +31,7 @@ veg      1  DEFAULT_FORMAT
            one file per realization,
            requires one prefix (for file name) */
 OUTPUT_SIM_ONE_FILE_PER_REALIZATION
-mytest
+output/test
 
 /* OUTPUT REPORT */
 /* Flag (0 / 1), and if 1, output report file. */
@@ -43,7 +44,8 @@ test_report.txt
    simulation grid itself is taken as training image), and
    if nTI > 1, one pdf image file (for training images, nTI variables). */
 1
-ti.gslib
+veg.gslib
+ortho.gslib
 
 /* DATA IMAGE FILE FOR SG */
 /* Number of image file(s) (n >= 0), followed by n file(s). */
@@ -148,12 +150,15 @@ NORMALIZING_LINEAR
 
 /* MAXIMAL NUMBER OF NEIGHBORING NODES FOR EACH VARIABLE (as many number(s) as number of variable(s)) */
 20
+20
 
 /* MAXIMAL DENSITY OF NEIGHBORING NODES IN SEARCH NEIGHBORHOOD FOR EACH VARIABLE (as many number(s)
    as number of variable(s)) */
 1.0
+1.0
 
 /* RELATIVE DISTANCE FLAG FOR EACH VARIABLE (as many flag(s) (0 / 1) as number of variable(s)) */
+0
 0
 
 /* DISTANCE TYPE FOR EACH VARIABLE (as many number(s) as number of variable(s)) */
@@ -164,10 +169,12 @@ NORMALIZING_LINEAR
       - 3: L-p distance, requires the real positive parameter p
       - 4: L-infinity distance */
 0
+3
 
 /* WEIGHT FACTOR FOR CONDITIONING DATA, FOR EACH VARIABLE (as many number(s) as number of variable(s)) */
 /* For the computation of distance between data events, if a value is a conditioning
    data, its corresponding contribution is multiplied by the factor given here. */
+1.0
 1.0
 
 /* SIMULATION AND PATH PARAMETERS */
@@ -192,9 +199,10 @@ SIM_ONE_BY_ONE
                    Example: u = (-1, 0, 2) means that the path will visit all nodes:
                    randomly in y-sections, with decreasing x-coordinate, and then increasing z-coordinate.
            This vector must be given after the key word PATH_UNILATERAL. */
-PATH_RANDOM
+PATH_UNILATERAL
 
 /* DISTANCE THRESHOLD FOR EACH VARIABLE (as many number(s) as number of variable(s)) */
+0.01
 0.01
 
 /* PROBABILITY CONSTRAINTS */
@@ -271,6 +279,7 @@ PATH_RANDOM
 */
 /* PROBABILITY CONSTRAINTS FOR VARIABLE #0 */
 0
+0
 
 /* BLOCK DATA */
 /* FOR EACH VARIABLE:
@@ -285,6 +294,7 @@ PATH_RANDOM
 0
 
 /* MAXIMAL SCAN FRACTION FOR EACH TI (as many number(s) as number of training image(s)) */
+0.3
 0.3
 
 /* TOLERANCE */
@@ -324,6 +334,6 @@ POST_PROCESSING_PARAMETERS_DEFAULT
 1
 
 /* NUMBER OF REALIZATIONS */
-10
+1
 
 END
