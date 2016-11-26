@@ -41,9 +41,12 @@ numpx = size(imcrop,1) * size(imcrop,2);
 if numpx > 2000^2; imcrop = imresize(imcrop,2000/sqrt(numpx),'nearest'); end
 
 hf = figure; subplot(1,2,1)
-pcolor(imcrop),shading flat, colorbar,title('Patterned image')
+pcolor(imcrop), shading flat, colorbar
+title('Patterned image')
 subplot(1,2,2)
-pcolor(L.powmean),shading flat,colorbar,title('Corresponding mean power of pattern forming frequencies')
+pcolor(L.powmean), shading flat
+colorbar
+title('Corresponding mean power of pattern forming frequencies')
 
 %% 4. DETERMINE MINIMUM POWER THRESHOLD AND MINIMUM PATCH SIZE THRESHOLD
 MinPower = 2.5e10; %THIS VALUE SET MANUALLY
