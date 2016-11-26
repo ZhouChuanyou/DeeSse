@@ -23,9 +23,9 @@
 % both be run with the same parameters.
 
 %% 1. SET IMAGE AND CHOOSE WINDOW PARAMETERS
-% image = flipud(imread('ExamplePattern2.tiff')); 
-%this should be a binary image of vegetation/novegetation. convert to double to use pcolor
 image = flipud(imread('ExamplePattern2.tiff')); 
+%this should be a binary image of vegetation/novegetation. convert to double to use pcolor
+% image = flipud(imread('hillslope.tiff')); 
 %THESE VALUES SHOULD BE SET MANUALLY
 params.w = 60; %set the width of the window (in pixels)
 params.dL = 10; %set the step length (px)
