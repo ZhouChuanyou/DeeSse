@@ -1,7 +1,7 @@
 % Cite this code as:
 % Penny, G., Daniels, K.E., Thompson, S.E. (2013). Local pattern properties. 
 % Local properties of patterned vegetation: quantifying endogenous and 
-% exogenous effects. Proceedings of the Royal Society A: Mathematical, 
+% exogenous efzfects. Proceedings of the Royal Society A: Mathematical, 
 % Physical and Engineering Sciences. doi:10.xxxx/rspa.xxxx.xxxx
 % ************************************************************************
 %
@@ -23,15 +23,19 @@
 % both be run with the same parameters.
 
 %% 1. SET IMAGE AND CHOOSE WINDOW PARAMETERS
+
 close all
+% file = strcat('../tex_example/tiffs/test', int2str(im), '.tiff');
+% image = flipud(imread(file)); 
 image = flipud(imread('ExamplePattern2.tiff')); 
+
 %this should be a binary image of vegetation/novegetation. convert to double to use pcolor
 % image = flipud(imread('hillslope.tiff')); 
 %THESE VALUES SHOULD BE SET MANUALLY
 params.w = 60; %set the width of the window (in pixels)
 params.dL = 10; %set the step length (px)
 params.minL = 5; %set the max wavelength (px)
-params.maxL = 20; %set the min wavelength (typ w/3) (px)
+params.maxL = 18; %set the min wavelength (typ w/3) (px)
 
 %% 2. CALCULATE WAVELENGTH, DIRECTION, UNIQUENESS FOR EACH WINDOW
 [imcrop,L,D,params2] = LocalPattProps(image,params);
@@ -47,18 +51,31 @@ title('Patterned image')
 subplot(1,2,2)
 pcolor(L.powmean), shading flat
 colorbar
-title('Corresponding mean power of pattern forming frequencies')
-
+title('Corresponding mean power')  % of pattern forming frequencies
+hf.PaperPosition = [0 0 9 4];  set(gca,'fontsize', 10)
+filestring = strcat('DeeSse2/mean_power_train.tiff');
+print(hf,filestring,'-dpng')
 
 %% 4. DETERMINE MINIMUM POWER THRESHOLD AND MINIMUM PATCH SIZE THRESHOLD
-MinPower = 2.5e10; %THIS VALUE SET MANUALLY
-MinPatchSize = 20; %THIS VALUE SET MANUALLY
+MinPower = 0; % 2.5e10; %THIS VALUE SET MANUALLY
+MinPatchSize = 0; % 20; %THIS VALUE SET MANUALLY
 
 %% 5. MERGE THE OVERLAPPING WINDOWS
 [L_merge,D_merge] = LPPmerge(L,D,params2,MinPower,MinPatchSize);
 
 %% 6. PLOT THE RESULTS
-figure,pcolor(L_merge.final),shading flat,colorbar,title('Local pattern wavelength')
-figure,pcolor(D_merge.final),shading flat,colorbar,title('Local pattern direction')
-figure,pcolor(imcrop),shading flat, colorbar,title('Patterned image')
+f = figure; pcolor(L_merge.final), shading flat,colorbar
+title('Local pattern wavelength')
+f.PaperPosition = [0 0 5 4];  set(gca,'fontsize', 10)
+filestring = strcat('DeeSse2/local_wavelength_train.tiff');
+print(f,filestring,'-dpng')
+
+f = figure; pcolor(D_merge.final); shading flat; colorbar,title('Local pattern direction')
+filestring = strcat('DeeSse2/local_direction_train.tiff');
+f.PaperPosition = [0 0 5 4];  set(gca,'fontsize', 10)
+print(f,filestring,'-dpng')
+
+%     f = figure; pcolor(imcrop); shading flat;  colorbar,title('Patterned image')
+%     print(f,filestring,'-dpng')
+
 

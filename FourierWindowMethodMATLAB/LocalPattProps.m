@@ -23,7 +23,7 @@ function [imagecrop,L,D,params] = LocalPattProps(image,params)
 %   .maxL: maximum allowable wavelength in px (typ. w/4 < maxL <w/3, ie reject window if dominant
 %       wavelength only shows three periods in the window)
 %
-% OUTPUT: 
+% OUTPUT:
 % L. (D.)
 %   powmean: mean power of the pattern forming wavelengths from the power spectrum
 %   powmax: max power for given radial band (angular band)
