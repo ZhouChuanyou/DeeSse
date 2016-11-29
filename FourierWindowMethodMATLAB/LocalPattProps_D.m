@@ -23,7 +23,7 @@
 % both be run with the same parameters.
 
 %% 1. SET IMAGE AND CHOOSE WINDOW PARAMETERS
-for im = 0:1
+for im = 0:5
     close all
     file = strcat('../tex_example/tiffs/test', int2str(im), '.tiff');
     image = flipud(imread(file)); 
@@ -55,8 +55,8 @@ for im = 0:1
     print(hf,filestring,'-dpng')
 
     %% 4. DETERMINE MINIMUM POWER THRESHOLD AND MINIMUM PATCH SIZE THRESHOLD
-    MinPower = 0; % 2.5e10; %THIS VALUE SET MANUALLY
-    MinPatchSize = 0; % 20; %THIS VALUE SET MANUALLY
+    MinPower = -1; % 2.5e10; %THIS VALUE SET MANUALLY
+    MinPatchSize = -1; % 20; %THIS VALUE SET MANUALLY
 
     %% 5. MERGE THE OVERLAPPING WINDOWS
     [L_merge,D_merge] = LPPmerge(L,D,params2,MinPower,MinPatchSize);
