@@ -29,7 +29,7 @@ image = flipud(imread('ExamplePattern2.tiff'));
 % image = flipud(imread('hillslope.tiff')); 
 %THESE VALUES SHOULD BE SET MANUALLY
 params.w = 60; %set the width of the window (in pixels)
-params.dL = 10; %set the step length (px)
+params.dL = 1; %set the step length (px)
 params.minL = 5; %set the max wavelength (px)
 params.maxL = 20; %set the min wavelength (typ w/3) (px)
 
