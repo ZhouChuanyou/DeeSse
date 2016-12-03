@@ -102,7 +102,9 @@ ti.gslib
                   - two values (lower and upper bounds) (real) if flag is 0
                   - name of the image file (two variables) if flag is 1
 */
-1
+1   
+0  0  0
+1  rot.gslib
 
 
 /* CONSISTENCY OF CONDITIONING DATA (TOLERANCE RELATIVELY TO THE RANGE OF TRAINING VALUES) */
