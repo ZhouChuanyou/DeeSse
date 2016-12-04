@@ -181,7 +181,7 @@ Statistics on all simulated nodes:
 incl.:#nodes (tot.) from marg.:         0              (    0.0000% of sim. nodes (tot.))
 #sim. nodes (tot.) ab. thresh.:     29657              (   53.2480% of sim. nodes (tot.))
 #flagged nodes (for resimul.) :     47726
-CPU time (sec):      32.78
+CPU time (sec):      32.88
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Post-processing path   1 of   1:
 --------------------------------------------------------------------------------
@@ -200,11 +200,11 @@ Statistics on all simulated nodes:
 #sim. nodes (tot.)            :     55696
 #sim. nodes (tot.) ab. thresh.:         0              (    0.0000% of sim. nodes (tot.))
 #flagged nodes (for resimul.) :         0
-CPU time (sec):       0.27
+CPU time (sec):       0.29
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #post-processing path(s) done:   1
 ********************************************************************************
-CPU time (sec) for realization     1 of     1:      33.06
+CPU time (sec) for realization     1 of     1:      33.17
 ********************************************************************************
-CPU time (sec) for all realizations          :      33.07
+CPU time (sec) for all realizations          :      33.18
 ================================================================================
