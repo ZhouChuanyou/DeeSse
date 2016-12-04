@@ -23,7 +23,7 @@ simInput:
       format string for variable   0: %.10g
 
    outputSimJob: OUTPUT_SIM_ONE_FILE_PER_REALIZATION
-      outputSimImageFileName: output/test
+      outputSimImageFileName: test
 
    outputReportFlag: 1
    outputReportFileName: test_report.txt
@@ -181,7 +181,7 @@ Statistics on all simulated nodes:
 incl.:#nodes (tot.) from marg.:         0              (    0.0000% of sim. nodes (tot.))
 #sim. nodes (tot.) ab. thresh.:     31594              (   78.9850% of sim. nodes (tot.))
 #flagged nodes (for resimul.) :     38339
-CPU time (sec):       1.71
+CPU time (sec):       1.63
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Post-processing path   1 of   1:
 --------------------------------------------------------------------------------
@@ -200,11 +200,11 @@ Statistics on all simulated nodes:
 #sim. nodes (tot.)            :     40000
 #sim. nodes (tot.) ab. thresh.:      1045              (    2.6125% of sim. nodes (tot.))
 #flagged nodes (for resimul.) :      6171
-CPU time (sec):       0.17
+CPU time (sec):       0.16
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #post-processing path(s) done:   1
 ********************************************************************************
-CPU time (sec) for realization     1 of     1:       1.88
+CPU time (sec) for realization     1 of     1:       1.79
 ********************************************************************************
-CPU time (sec) for all realizations          :       1.89
+CPU time (sec) for all realizations          :       1.79
 ================================================================================
