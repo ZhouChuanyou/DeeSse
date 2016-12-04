@@ -1,5 +1,5 @@
 /* SIMULATION GRID (SG) */
-300    300     1    // size    in each direction
+200    200     1    // size    in each direction
   1.0    1.0   1.0  // spacing in each direction
   0.0    0.0   0.0  // origin
 
@@ -103,7 +103,7 @@ ti.gslib
                   - name of the image file (two variables) if flag is 1
 */
 1   
-1  rot.ascii
+1  rot.gslib
 0  0
 0  0
 
@@ -327,6 +327,6 @@ POST_PROCESSING_PARAMETERS_DEFAULT
 1
 
 /* NUMBER OF REALIZATIONS */
-100
+1
 
 END
