@@ -1,5 +1,5 @@
 /* SIMULATION GRID (SG) */
-300    300     1    // size    in each direction
+200    200     1    // size    in each direction
   1.0    1.0   1.0  // spacing in each direction
   0.0    0.0   0.0  // origin
 
@@ -30,7 +30,7 @@ veg      1  DEFAULT_FORMAT
            one file per realization,
            requires one prefix (for file name) */
 OUTPUT_SIM_ONE_FILE_PER_REALIZATION
-output/test
+test
 
 /* OUTPUT REPORT */
 /* Flag (0 / 1), and if 1, output report file. */
@@ -327,6 +327,6 @@ POST_PROCESSING_PARAMETERS_DEFAULT
 1
 
 /* NUMBER OF REALIZATIONS */
-100
+1
 
 END
