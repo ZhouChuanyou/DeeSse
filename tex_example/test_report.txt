@@ -23,7 +23,7 @@ simInput:
       format string for variable   0: %.10g
 
    outputSimJob: OUTPUT_SIM_ONE_FILE_PER_REALIZATION
-      outputSimImageFileName: output/test
+      outputSimImageFileName: rotated/test
 
    outputReportFlag: 1
    outputReportFileName: test_report.txt
@@ -34,13 +34,13 @@ simInput:
 
    trainImage   0:
       grid:
-         Size   :     300            300              1
+         Size   :      25             25              1
          Spacing:       1.000000       1.000000       1.000000
          Origin :       0.000000       0.000000       0.000000
-         Number of nodes in a xy-section:    90000
-         Total number of nodes          :    90000
+         Number of nodes in a xy-section:      625
+         Total number of nodes          :      625
       nvar:         1
-      nxyzv:    90000
+      nxyzv:      625
       varName:
          veg
 
@@ -50,7 +50,13 @@ simInput:
 
    homothetyUsage: 0
 
-   rotationUsage: 0
+   rotationUsage: 1
+   rotationAzimuthImageFlag: 0
+      rotationAzimuthValue:   90.000
+   rotationDipImageFlag: 0
+      rotationDipValue:    0.000
+   rotationPlungeImageFlag: 0
+      rotationPlungeValue:    0.000
 
    trainValueRangeExtensionMax:       0.050000
 
@@ -123,12 +129,12 @@ simInput:
 ================================================================================
 Number of different search neighborhood(s):   1
 Search neighborhood   0
-   size :      69729
-   ixMin:       -149
-   iyMin:       -149
+   size :        441
+   ixMin:        -12
+   iyMin:        -12
    izMin:          0
-   ixMax:        149
-   iyMax:        149
+   ixMax:         12
+   iyMax:         12
    izMax:          0
 
 Search neighborhood for variable   0:   0
@@ -150,45 +156,45 @@ Realization     1 of     1:
 Statistics on nodes simulated using training image   0:
 #sim. nodes                                 :     40000
 incl.: #nodes from marginal                 :         0
-#sim. nodes above threshold                 :     18500              (   46.2500% of sim. nodes)
-                                                                     (   46.2500% of sim. nodes excluding nodes from marginal)
+#sim. nodes above threshold                 :     36044              (   90.1100% of sim. nodes)
+                                                                     (   90.1100% of sim. nodes excluding nodes from marginal)
 with error (relative excess from threshold):
 error Min                                   :         4.00000000E+00 (  400.0000%)
-error Max                                   :         1.40000000E+01 ( 1400.0000%)
-error Mean                                  :         5.38243243E+00 (  538.2432%)
-#scan it. Min                               :         1              (    0.0011% of TI)
-#scan it. Max                               :     27000              (   30.0000% of TI)
-#scan it. Mean                              :         1.54341537E+04 (   17.1491% of TI)
+error Max                                   :         6.56666667E+01 ( 6566.6667%)
+error Mean                                  :         1.14381363E+01 ( 1143.8136%)
+#scan it. Min                               :         1              (    0.1600% of TI)
+#scan it. Max                               :       187              (   29.9200% of TI)
+#scan it. Mean                              :         1.64817175E+02 (   26.3707% of TI)
 --------------------------------------------------------------------------------
 Statistics on all simulated nodes:
 #sim. nodes (tot.)            :     40000
 incl.:#nodes (tot.) from marg.:         0              (    0.0000% of sim. nodes (tot.))
-#sim. nodes (tot.) ab. thresh.:     18500              (   46.2500% of sim. nodes (tot.))
-#flagged nodes (for resimul.) :     32804
-CPU time (sec):      33.12
+#sim. nodes (tot.) ab. thresh.:     36044              (   90.1100% of sim. nodes (tot.))
+#flagged nodes (for resimul.) :     39693
+CPU time (sec):       0.62
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Post-processing path   1 of   1:
 --------------------------------------------------------------------------------
 Statistics on nodes simulated using training image   0:
-#sim. nodes                                 :     32804
-#sim. nodes above threshold                 :         0              (    0.0000% of sim. nodes)
+#sim. nodes                                 :     39693
+#sim. nodes above threshold                 :      4635              (   11.6771% of sim. nodes)
 with error (relative excess from threshold):
-error Min                                   : --
-error Max                                   : --
-error Mean                                  : --
-#scan it. Min                               :         1              (    0.0011% of TI)
-#scan it. Max                               :      7250              (    8.0556% of TI)
-#scan it. Mean                              :         7.16300451E+01 (    0.0796% of TI)
+error Min                                   :         7.33333333E+00 (  733.3333%)
+error Max                                   :         1.56666667E+01 ( 1566.6667%)
+error Mean                                  :         7.38007911E+00 (  738.0079%)
+#scan it. Min                               :         1              (    0.1600% of TI)
+#scan it. Max                               :       125              (   20.0000% of TI)
+#scan it. Mean                              :         3.46608218E+01 (    5.5457% of TI)
 --------------------------------------------------------------------------------
 Statistics on all simulated nodes:
 #sim. nodes (tot.)            :     40000
-#sim. nodes (tot.) ab. thresh.:         0              (    0.0000% of sim. nodes (tot.))
-#flagged nodes (for resimul.) :         0
-CPU time (sec):       0.16
+#sim. nodes (tot.) ab. thresh.:      4635              (   11.5875% of sim. nodes (tot.))
+#flagged nodes (for resimul.) :     19038
+CPU time (sec):       0.15
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #post-processing path(s) done:   1
 ********************************************************************************
-CPU time (sec) for realization     1 of     1:      33.29
+CPU time (sec) for realization     1 of     1:       0.78
 ********************************************************************************
-CPU time (sec) for all realizations          :      33.30
+CPU time (sec) for all realizations          :       0.78
 ================================================================================
