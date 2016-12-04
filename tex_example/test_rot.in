@@ -1,5 +1,5 @@
 /* SIMULATION GRID (SG) */
-200    200     1    // size    in each direction
+230    230     1    // size    in each direction
   1.0    1.0   1.0  // spacing in each direction
   0.0    0.0   0.0  // origin
 
