@@ -51,8 +51,18 @@ simInput:
    homothetyUsage: 0
 
    rotationUsage: 1
-   rotationAzimuthImageFlag: 0
-      rotationAzimuthValue:   90.000
+   rotationAzimuthImageFlag: 1
+   rotationAzimuthImage:
+      grid:
+         Size   :     238            238              1
+         Spacing:       1.000000       1.000000       1.000000
+         Origin :       0.000000       0.000000       0.000000
+         Number of nodes in a xy-section:    56644
+         Total number of nodes          :    56644
+      nvar:         1
+      nxyzv:    56644
+      varName:
+         rot
    rotationDipImageFlag: 0
       rotationDipValue:    0.000
    rotationPlungeImageFlag: 0
@@ -156,41 +166,41 @@ Realization     1 of     1:
 Statistics on nodes simulated using training image   0:
 #sim. nodes                                 :     56644
 incl.: #nodes from marginal                 :         0
-#sim. nodes above threshold                 :     18211              (   32.1499% of sim. nodes)
-                                                                     (   32.1499% of sim. nodes excluding nodes from marginal)
+#sim. nodes above threshold                 :     19500              (   34.4255% of sim. nodes)
+                                                                     (   34.4255% of sim. nodes excluding nodes from marginal)
 with error (relative excess from threshold):
 error Min                                   :         4.00000000E+00 (  400.0000%)
 error Max                                   :         4.90000000E+01 ( 4900.0000%)
-error Mean                                  :         2.18126710E+01 ( 2181.2671%)
+error Mean                                  :         2.09256076E+01 ( 2092.5608%)
 #scan it. Min                               :         1              (    0.2500% of TI)
 #scan it. Max                               :       120              (   30.0000% of TI)
-#scan it. Mean                              :         3.35289704E+01 (    8.3822% of TI)
+#scan it. Mean                              :         3.57928289E+01 (    8.9482% of TI)
 --------------------------------------------------------------------------------
 Statistics on all simulated nodes:
 #sim. nodes (tot.)            :     56644
 incl.:#nodes (tot.) from marg.:         0              (    0.0000% of sim. nodes (tot.))
-#sim. nodes (tot.) ab. thresh.:     18211              (   32.1499% of sim. nodes (tot.))
-#flagged nodes (for resimul.) :     29030
+#sim. nodes (tot.) ab. thresh.:     19500              (   34.4255% of sim. nodes (tot.))
+#flagged nodes (for resimul.) :     30428
 CPU time (sec):       0.25
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Post-processing path   1 of   1:
 --------------------------------------------------------------------------------
 Statistics on nodes simulated using training image   0:
-#sim. nodes                                 :     29030
-#sim. nodes above threshold                 :      5151              (   17.7437% of sim. nodes)
+#sim. nodes                                 :     30428
+#sim. nodes above threshold                 :      5423              (   17.8224% of sim. nodes)
 with error (relative excess from threshold):
 error Min                                   :         7.33333333E+00 (  733.3333%)
 error Max                                   :         2.40000000E+01 ( 2400.0000%)
-error Mean                                  :         1.41054811E+01 ( 1410.5481%)
+error Mean                                  :         1.35860225E+01 ( 1358.6022%)
 #scan it. Min                               :         1              (    0.2500% of TI)
 #scan it. Max                               :        80              (   20.0000% of TI)
-#scan it. Mean                              :         1.54302101E+01 (    3.8576% of TI)
+#scan it. Mean                              :         1.54923754E+01 (    3.8731% of TI)
 --------------------------------------------------------------------------------
 Statistics on all simulated nodes:
 #sim. nodes (tot.)            :     56644
-#sim. nodes (tot.) ab. thresh.:      5151              (    9.0936% of sim. nodes (tot.))
-#flagged nodes (for resimul.) :     10560
-CPU time (sec):       0.08
+#sim. nodes (tot.) ab. thresh.:      5423              (    9.5738% of sim. nodes (tot.))
+#flagged nodes (for resimul.) :     11135
+CPU time (sec):       0.07
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #post-processing path(s) done:   1
 ********************************************************************************

@@ -103,7 +103,7 @@ ti.gslib
                   - name of the image file (two variables) if flag is 1
 */
 1
-0   90
+1  rot.gslib 
 0  0
 0  0
 
