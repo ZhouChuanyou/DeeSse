@@ -30,7 +30,7 @@ veg      1  DEFAULT_FORMAT
            one file per realization,
            requires one prefix (for file name) */
 OUTPUT_SIM_ONE_FILE_PER_REALIZATION
-rotate/veg
+stripes/stripes
 
 /* OUTPUT REPORT */
 /* Flag (0 / 1), and if 1, output report file. */
@@ -43,7 +43,7 @@ test_report.txt
    simulation grid itself is taken as training image), and
    if nTI > 1, one pdf image file (for training images, nTI variables). */
 1
-ti.gslib
+ti_stripe.gslib
 
 /* DATA IMAGE FILE FOR SG */
 /* Number of image file(s) (n >= 0), followed by n file(s). */

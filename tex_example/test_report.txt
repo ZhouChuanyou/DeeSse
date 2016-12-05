@@ -23,7 +23,7 @@ simInput:
       format string for variable   0: %.10g
 
    outputSimJob: OUTPUT_SIM_ONE_FILE_PER_REALIZATION
-      outputSimImageFileName: rotate/veg
+      outputSimImageFileName: rotate/rveg
 
    outputReportFlag: 1
    outputReportFileName: test_report.txt
@@ -50,7 +50,23 @@ simInput:
 
    homothetyUsage: 0
 
-   rotationUsage: 0
+   rotationUsage: 1
+   rotationAzimuthImageFlag: 1
+   rotationAzimuthImage:
+      grid:
+         Size   :     238            238              1
+         Spacing:       1.000000       1.000000       1.000000
+         Origin :       0.000000       0.000000       0.000000
+         Number of nodes in a xy-section:    56644
+         Total number of nodes          :    56644
+      nvar:         1
+      nxyzv:    56644
+      varName:
+         veg
+   rotationDipImageFlag: 0
+      rotationDipValue:    0.000
+   rotationPlungeImageFlag: 0
+      rotationPlungeValue:    0.000
 
    trainValueRangeExtensionMax:       0.050000
 
@@ -150,90 +166,90 @@ Realization     1 of     2:
 Statistics on nodes simulated using training image   0:
 #sim. nodes                                 :     56644
 incl.: #nodes from marginal                 :         0
-#sim. nodes above threshold                 :     38006              (   67.0963% of sim. nodes)
-                                                                     (   67.0963% of sim. nodes excluding nodes from marginal)
+#sim. nodes above threshold                 :     39810              (   70.2811% of sim. nodes)
+                                                                     (   70.2811% of sim. nodes excluding nodes from marginal)
 with error (relative excess from threshold):
 error Min                                   :         4.00000000E+00 (  400.0000%)
-error Max                                   :         2.40000000E+01 ( 2400.0000%)
-error Mean                                  :         7.27027131E+00 (  727.0271%)
+error Max                                   :         2.90000000E+01 ( 2900.0000%)
+error Mean                                  :         7.51825723E+00 (  751.8257%)
 #scan it. Min                               :         1              (    0.0100% of TI)
 #scan it. Max                               :      3000              (   30.0000% of TI)
-#scan it. Mean                              :         2.25839796E+03 (   22.5840% of TI)
+#scan it. Mean                              :         2.32836315E+03 (   23.2836% of TI)
 --------------------------------------------------------------------------------
 Statistics on all simulated nodes:
 #sim. nodes (tot.)            :     56644
 incl.:#nodes (tot.) from marg.:         0              (    0.0000% of sim. nodes (tot.))
-#sim. nodes (tot.) ab. thresh.:     38006              (   67.0963% of sim. nodes (tot.))
-#flagged nodes (for resimul.) :     51880
-CPU time (sec):       7.33
+#sim. nodes (tot.) ab. thresh.:     39810              (   70.2811% of sim. nodes (tot.))
+#flagged nodes (for resimul.) :     53114
+CPU time (sec):       7.54
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Post-processing path   1 of   1:
 --------------------------------------------------------------------------------
 Statistics on nodes simulated using training image   0:
-#sim. nodes                                 :     51880
-#sim. nodes above threshold                 :        82              (    0.1581% of sim. nodes)
+#sim. nodes                                 :     53114
+#sim. nodes above threshold                 :      1359              (    2.5586% of sim. nodes)
 with error (relative excess from threshold):
 error Min                                   :         7.33333333E+00 (  733.3333%)
-error Max                                   :         7.33333333E+00 (  733.3333%)
-error Mean                                  :         7.33333333E+00 (  733.3333%)
+error Max                                   :         1.56666667E+01 ( 1566.6667%)
+error Mean                                  :         8.17341182E+00 (  817.3412%)
 #scan it. Min                               :         1              (    0.0100% of TI)
 #scan it. Max                               :      2000              (   20.0000% of TI)
-#scan it. Mean                              :         6.31683308E+01 (    0.6317% of TI)
+#scan it. Mean                              :         1.08962646E+02 (    1.0896% of TI)
 --------------------------------------------------------------------------------
 Statistics on all simulated nodes:
 #sim. nodes (tot.)            :     56644
-#sim. nodes (tot.) ab. thresh.:        82              (    0.1448% of sim. nodes (tot.))
-#flagged nodes (for resimul.) :       569
-CPU time (sec):       0.26
+#sim. nodes (tot.) ab. thresh.:      1359              (    2.3992% of sim. nodes (tot.))
+#flagged nodes (for resimul.) :      4208
+CPU time (sec):       0.34
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #post-processing path(s) done:   1
 ********************************************************************************
-CPU time (sec) for realization     1 of     2:       7.59
+CPU time (sec) for realization     1 of     2:       7.89
 ********************************************************************************
 Realization     2 of     2:
 --------------------------------------------------------------------------------
 Statistics on nodes simulated using training image   0:
 #sim. nodes                                 :     56644
 incl.: #nodes from marginal                 :         0
-#sim. nodes above threshold                 :     37449              (   66.1129% of sim. nodes)
-                                                                     (   66.1129% of sim. nodes excluding nodes from marginal)
+#sim. nodes above threshold                 :     39744              (   70.1645% of sim. nodes)
+                                                                     (   70.1645% of sim. nodes excluding nodes from marginal)
 with error (relative excess from threshold):
 error Min                                   :         4.00000000E+00 (  400.0000%)
-error Max                                   :         2.56666667E+01 ( 2566.6667%)
-error Mean                                  :         7.27894013E+00 (  727.8940%)
+error Max                                   :         3.23333333E+01 ( 3233.3333%)
+error Mean                                  :         7.49601572E+00 (  749.6016%)
 #scan it. Min                               :         1              (    0.0100% of TI)
 #scan it. Max                               :      3000              (   30.0000% of TI)
-#scan it. Mean                              :         2.23215915E+03 (   22.3216% of TI)
+#scan it. Mean                              :         2.32315845E+03 (   23.2316% of TI)
 --------------------------------------------------------------------------------
 Statistics on all simulated nodes:
 #sim. nodes (tot.)            :     56644
 incl.:#nodes (tot.) from marg.:         0              (    0.0000% of sim. nodes (tot.))
-#sim. nodes (tot.) ab. thresh.:     37449              (   66.1129% of sim. nodes (tot.))
-#flagged nodes (for resimul.) :     51773
-CPU time (sec):       7.31
+#sim. nodes (tot.) ab. thresh.:     39744              (   70.1645% of sim. nodes (tot.))
+#flagged nodes (for resimul.) :     53044
+CPU time (sec):       7.51
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Post-processing path   1 of   1:
 --------------------------------------------------------------------------------
 Statistics on nodes simulated using training image   0:
-#sim. nodes                                 :     51773
-#sim. nodes above threshold                 :       107              (    0.2067% of sim. nodes)
+#sim. nodes                                 :     53044
+#sim. nodes above threshold                 :      1364              (    2.5715% of sim. nodes)
 with error (relative excess from threshold):
 error Min                                   :         7.33333333E+00 (  733.3333%)
-error Max                                   :         7.33333333E+00 (  733.3333%)
-error Mean                                  :         7.33333333E+00 (  733.3333%)
+error Max                                   :         1.56666667E+01 ( 1566.6667%)
+error Mean                                  :         8.09701857E+00 (  809.7019%)
 #scan it. Min                               :         1              (    0.0100% of TI)
 #scan it. Max                               :      2000              (   20.0000% of TI)
-#scan it. Mean                              :         6.31621695E+01 (    0.6316% of TI)
+#scan it. Mean                              :         1.10809913E+02 (    1.1081% of TI)
 --------------------------------------------------------------------------------
 Statistics on all simulated nodes:
 #sim. nodes (tot.)            :     56644
-#sim. nodes (tot.) ab. thresh.:       107              (    0.1889% of sim. nodes (tot.))
-#flagged nodes (for resimul.) :       736
-CPU time (sec):       0.24
+#sim. nodes (tot.) ab. thresh.:      1364              (    2.4080% of sim. nodes (tot.))
+#flagged nodes (for resimul.) :      4260
+CPU time (sec):       0.36
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #post-processing path(s) done:   1
 ********************************************************************************
-CPU time (sec) for realization     2 of     2:       7.56
+CPU time (sec) for realization     2 of     2:       7.87
 ********************************************************************************
-CPU time (sec) for all realizations          :      15.17
+CPU time (sec) for all realizations          :      15.78
 ================================================================================
