@@ -28,9 +28,11 @@ veg      1  DEFAULT_FORMAT
            requires as many file name(s) as variable(s) flagged as 1 above
       - OUTPUT_SIM_ONE_FILE_PER_REALIZATION:
            one file per realization,
-           requires one prefix (for file name) */
+           requires one prefix (for file name) 
+stripes/stripes  -  what does deesse do with stripes?  
+*/
 OUTPUT_SIM_ONE_FILE_PER_REALIZATION
-stripes/rot
+output/veg
 
 /* OUTPUT REPORT */
 /* Flag (0 / 1), and if 1, output report file. */
@@ -43,7 +45,7 @@ test_report.txt
    simulation grid itself is taken as training image), and
    if nTI > 1, one pdf image file (for training images, nTI variables). */
 1
-ti_stripe.gslib
+ti.gslib
 
 /* DATA IMAGE FILE FOR SG */
 /* Number of image file(s) (n >= 0), followed by n file(s). */
@@ -324,6 +326,6 @@ POST_PROCESSING_PARAMETERS_DEFAULT
 1
 
 /* NUMBER OF REALIZATIONS */
-2
+10
 
 END
