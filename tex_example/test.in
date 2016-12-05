@@ -30,7 +30,7 @@ stripes      1  DEFAULT_FORMAT
            one file per realization,
            requires one prefix (for file name) */
 OUTPUT_SIM_ONE_FILE_PER_REALIZATION
-output/stripes1
+output/stripes
 
 /* OUTPUT REPORT */
 /* Flag (0 / 1), and if 1, output report file. */
@@ -111,7 +111,7 @@ ti.gslib
    (in both extremities) of at most 5%; this separately applies to all variables for which
    the distance is absolute (not relative, see "relative distance flag" below) and the
    distance type is not 0 (see "distance type" below). */
-0.1
+0.05
 
 /* NORMALIZATION TYPE (FOR VARIABLES FOR WHICH DISTANCE TYPE IS NOT 0 AND DISTANCE IS ABSOLUTE) */
 /* Available types:
@@ -324,6 +324,6 @@ POST_PROCESSING_PARAMETERS_DEFAULT
 1
 
 /* NUMBER OF REALIZATIONS */
-10
+2
 
 END
