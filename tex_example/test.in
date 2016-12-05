@@ -182,7 +182,7 @@ SIM_ONE_BY_ONE
       - PATH_RANDOM:
            random path, for simulation type:
               - SIM_ONE_BY_ONE     : path visiting all nodes and variables in a random order
-              - SIM_VARIABLE_VECTOR: path visiting all nodes in a random order
+              - SIM_VARIALE_VECTOR: path visiting all nodes in a random order
       - PATH_UNILATERAL:
            unilateral path, for simulation type:
               - SIM_ONE_BY_ONE: requires a vector of size 4.
@@ -324,6 +324,6 @@ POST_PROCESSING_PARAMETERS_DEFAULT
 1
 
 /* NUMBER OF REALIZATIONS */
-1
+2
 
 END
