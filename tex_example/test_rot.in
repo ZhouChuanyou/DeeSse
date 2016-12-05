@@ -14,7 +14,7 @@
       varName3  1  DEFAULT_FORMAT
 */
 1
-stripes      1  DEFAULT_FORMAT
+veg      1  DEFAULT_FORMAT
 
 /* SOUTPUT SETTINGS FOR SIMULATION */
 /* Key word and required name(s) or prefix, for output of the realizations:
@@ -30,7 +30,7 @@ stripes      1  DEFAULT_FORMAT
            one file per realization,
            requires one prefix (for file name) */
 OUTPUT_SIM_ONE_FILE_PER_REALIZATION
-output/rot_stripes
+output/rot_veg
 
 /* OUTPUT REPORT */
 /* Flag (0 / 1), and if 1, output report file. */
