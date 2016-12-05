@@ -14,7 +14,7 @@
       varName3  1  DEFAULT_FORMAT
 */
 1
-veg      1  DEFAULT_FORMAT
+stripes      1  DEFAULT_FORMAT
 
 /* OUTPUT SETTINGS FOR SIMULATION */
 /* Key word and required name(s) or prefix, for output of the realizations:
@@ -30,7 +30,7 @@ veg      1  DEFAULT_FORMAT
            one file per realization,
            requires one prefix (for file name) */
 OUTPUT_SIM_ONE_FILE_PER_REALIZATION
-rotated/test
+output/rot_stripes
 
 /* OUTPUT REPORT */
 /* Flag (0 / 1), and if 1, output report file. */
@@ -103,7 +103,7 @@ ti.gslib
                   - name of the image file (two variables) if flag is 1
 */
 1
-1  rot.gslib 
+0   90
 0  0
 0  0
 

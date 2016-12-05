@@ -14,7 +14,7 @@
       varName3  1  DEFAULT_FORMAT
 */
 1
-veg      1  DEFAULT_FORMAT
+stripes      1  DEFAULT_FORMAT
 
 /* OUTPUT SETTINGS FOR SIMULATION */
 /* Key word and required name(s) or prefix, for output of the realizations:
