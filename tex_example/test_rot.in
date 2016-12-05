@@ -28,11 +28,9 @@ veg      1  DEFAULT_FORMAT
            requires as many file name(s) as variable(s) flagged as 1 above
       - OUTPUT_SIM_ONE_FILE_PER_REALIZATION:
            one file per realization,
-           requires one prefix (for file name) 
-stripes/rstripes45
-*/
+           requires one prefix (for file name) */
 OUTPUT_SIM_ONE_FILE_PER_REALIZATION
-output/test
+stripes/rstripes45
 
 /* OUTPUT REPORT */
 /* Flag (0 / 1), and if 1, output report file. */
