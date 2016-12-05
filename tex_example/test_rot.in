@@ -1,6 +1,6 @@
 /* SIMULATION GRID (SG) */
-237    237     1    // size    in each direction
-  1.0    1.0   1.0  // spacing in each direction
+  238    238     1    // size    in each direction
+  1.0    1.0   1.0   // spacing in each direction
   0.0    0.0   0.0  // origin
 
 /* SIMULATION VARIABLES */
@@ -16,7 +16,7 @@
 1
 stripes      1  DEFAULT_FORMAT
 
-/* OUTPUT SETTINGS FOR SIMULATION */
+/* SOUTPUT SETTINGS FOR SIMULATION */
 /* Key word and required name(s) or prefix, for output of the realizations:
       - OUTPUT_SIM_NO_FILE:
            no file in output,
