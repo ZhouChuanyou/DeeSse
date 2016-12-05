@@ -30,7 +30,7 @@ veg      1  DEFAULT_FORMAT
            one file per realization,
            requires one prefix (for file name) */
 OUTPUT_SIM_ONE_FILE_PER_REALIZATION
-stripes/rstripes
+stripes/rstripes45
 
 /* OUTPUT REPORT */
 /* Flag (0 / 1), and if 1, output report file. */
@@ -103,7 +103,7 @@ ti_stripe.gslib
                   - name of the image file (two variables) if flag is 1
 */
 1
-1  rot.gslib 
+1  rot45.gslib 
 0  0
 0  0
 

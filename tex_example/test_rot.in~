@@ -103,7 +103,7 @@ ti_stripe.gslib
                   - name of the image file (two variables) if flag is 1
 */
 1
-1  rot.gslib 
+1  rot45.gslib 
 0  0
 0  0
 
