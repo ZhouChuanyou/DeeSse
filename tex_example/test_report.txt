@@ -23,7 +23,7 @@ simInput:
       format string for variable   0: %.10g
 
    outputSimJob: OUTPUT_SIM_ONE_FILE_PER_REALIZATION
-      outputSimImageFileName: output/test
+      outputSimImageFileName: output/stripes
 
    outputReportFlag: 1
    outputReportFileName: test_report.txt

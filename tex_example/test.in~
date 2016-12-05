@@ -30,7 +30,7 @@ veg      1  DEFAULT_FORMAT
            one file per realization,
            requires one prefix (for file name) */
 OUTPUT_SIM_ONE_FILE_PER_REALIZATION
-output/test
+output/stripes
 
 /* OUTPUT REPORT */
 /* Flag (0 / 1), and if 1, output report file. */
